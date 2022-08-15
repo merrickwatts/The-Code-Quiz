@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Quiz</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./age-verify-style.css" />
+
+</head>
+
+<body>
+    <header>
+        <h1><span class="header-style">||</span><a href="./index.html"> The Code Quiz </a><span class="header-style">||</span></h1>
+    </header>
+    <!-- question section -->
+    <div>
+        <section id="status-bar" class="stats-bar hidden">
+            <!-- Display for the current number of drinks taken -->
+            <div class="stats-card">
+                <h3 id="drinks"></h3>
+            </div>
+            <!-- Display for the current score -->
+            <div class="stats-card">
+                <h3 id="score"></h3>
+            </div>
+        </section> 
+
+    <!-- category section -->
+    <div class="categorys">
+        <!-- Choose a Category Section -->
+        <div id="category-section" class="category-section">
+            <div>
+                <h2>Ready to play?</h2>
+            </div>
+            <div>
+                <button id="category-1-btn" class="category-btn button" onclick="getQuestions()">START</button>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!-- Question Section -->
+    <section id="question-section" class="hidden">
+        <div class="question-section">
+            <div>
+                <h2 id="question" class="question"></h2>
+            </div>
+            <div class="answer-buttons">
+                <button id="answer-0-btn" class="answer-btn button" onclick="checkClickedButton(0);"></button>
+                <button id="answer-1-btn" class="answer-btn button" onclick="checkClickedButton(1);"></button>
+                <button id="answer-2-btn" class="answer-btn button" onclick="checkClickedButton(2);"></button>
+                <button id="answer-3-btn" class="answer-btn button" onclick="checkClickedButton(3);"></button>
+            </div>
+            <!-- Next Question Button After Question is Answered -->
+            <div>
+                <button id="next-question-btn" class="next-question-btn button other-button" onclick="getNextQuestion()">Next
+                    Question</button>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="./trivia.js"></script>
+</body>
+
+</html>

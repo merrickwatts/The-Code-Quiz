@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #00d1c0;
+    --secondary-color: #940047;
+    --teritary-color: #b60058;
+    --color: white;
+    --yes-color: #15cc29;
+    --no-color: #cc1616;
+}
+html {
+    color: var(--color);
+    background-color: var(--primary-color);
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: center;
+}
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 2px solid var(--secondary-color);
+    width: 50%;
+    text-shadow: 2px 2px 5px black;
+}
+.header-style {
+    color: var(--secondary-color);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    text-shadow: none;
+}
+
+
+#age-verify-box {
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.verification-form {
+    text-align: center;
+    font-size: 30px;
+    height: 300px;
+    width: 750px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 25px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Button Styling */
+button {
+    box-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px black;
+}
+button:hover {
+    cursor: pointer;
+    text-shadow: none;
+}
+.submit-btn-yes {
+    font-size: 30px;
+    color: var(--color);
+    border-radius: 15px;
+    background-color: var(--yes-color);
+    height: 75px;
+    width: 150px;
+    text-decoration: none;
+    border: none;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.submit-btn-no {
+    font-size: 30px;
+    border: none;
+    color: var(--color);
+    border-radius: 15px;
+    background-color: var(--no-color);
+    height: 75px;
+    width: 150px;
+    margin-top: 15px;
+
+}
+
+/* Adding hover colors to the Yes and No buttons*/
+.submit-btn-yes:hover {
+    background-color: var(--color);
+    color: var(--yes-color);
+    font-weight: bolder;
+    border: 2px solid var(--yes-color);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.submit-btn-no:hover {
+    background-color: var(--color);
+    color: var(--no-color);
+    font-weight: bolder;
+    border: 2px solid var(--no-color);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
